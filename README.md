@@ -1,2 +1,1 @@
-# DRIMSeq
-# ExtraMyelomaTrans_DT
+# ExtraMyelomaTrans_DTU
