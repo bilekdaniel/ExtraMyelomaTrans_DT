@@ -1,0 +1,15 @@
+.vscode
+.snakemake/
+results/*
+run_log/*
+!results/all_samples
+results/all_samples/*
+!results/all_samples/*.pdf
+data/*
+!data/raw
+data/raw/*
+!/data/raw/*.csv
+all_samples.e*
+all_samples.o*
+scripts/plugins/*
+scripts/util/*

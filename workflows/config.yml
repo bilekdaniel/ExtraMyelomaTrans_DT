@@ -1,0 +1,12 @@
+run_name: all_samples
+samples: "data/raw/samples_new.csv"
+gtf: "/scratch/project/open-25-50/gencode/gencode.v36.annotation.gtf"
+
+# minimal gene expression cutoff for filtering in drimseq
+mge: "10"
+# minimal transcripts expression cutoff for filtering in drimseq
+mfe: "10"
+# minimal transcripts proportion for filtering in drimseq
+mfp: "0.1"
+# alpha parameter value for testing statistical significance drimseq and stageR
+alpha: "0.05"

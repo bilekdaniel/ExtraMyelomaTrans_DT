@@ -1,0 +1,10 @@
+import os
+import pandas as pd
+
+configfile: "workflows/config.yml"
+
+include: "rules/drimseq.smk"
+
+rule all:
+    input:
+        f"results/{config['run_name']}/drimseq/StageR.tsv"
