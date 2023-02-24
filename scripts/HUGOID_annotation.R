@@ -33,7 +33,7 @@ col_order <- c("gene_id", "gene_id_str", "HugoID", "lr", "df", "pvalue", "adj_pv
 ANNOT <- ANNOT[, col_order]
 
 #save the file
-write.csv(ANNOT, file = paste("results", xargs$out_path, "DRIMSeq/genes_DTU_annot.csv", sep = "/"))
+write.csv(ANNOT, file = paste("results", xargs$out_path, "DRIMSeq/genes_DTU.csv", sep = "/"))
 
 ########################################
 ##              PROP                  ##
@@ -49,7 +49,7 @@ ANNOT$HugoID <- HugoID
 col_order <- c("gene_id", "gene_id_str", "HugoID", "feature_id", "lr", "df", "pvalue", "adj_pvalue")
 ANNOT <- ANNOT[, col_order]
 
-write.csv(ANNOT, file = paste("results", xargs$out_path, "DRIMSeq/transcripts_proportions_annot.csv", sep = "/"), row.names = FALSE)
+write.csv(ANNOT, file = paste("results", xargs$out_path, "DRIMSeq/transcripts_proportions.csv", sep = "/"), row.names = FALSE)
 
 ########################################
 ##              StageR                ##
@@ -62,4 +62,4 @@ ANNOT$HugoID <- HugoID
 col_order <- c("geneID", "HugoID", "txID", "gene", "transcript")
 ANNOT <- ANNOT[, col_order]
 
-write.csv(ANNOT, file = paste("results", xargs$out_path, "DRIMSeq/StageR_annot.csv", sep = "/"))
+write.csv(ANNOT, file = paste("results", xargs$out_path, "DRIMSeq/StageR.csv", sep = "/"))

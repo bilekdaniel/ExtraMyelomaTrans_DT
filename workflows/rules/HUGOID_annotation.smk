@@ -4,9 +4,9 @@ rule HUGOID_annotation:
         f"results/{config['run_name']}/DRIMSeq/transcripts_proportions.tsv",
         f"results/{config['run_name']}/DRIMSeq/StageR.tsv",
     output:
-        f"results/{config['run_name']}/DRIMSeq/genes_DTU_annot.csv",
-        f"results/{config['run_name']}/DRIMSeq/transcripts_proportions_annot.csv",
-        f"results/{config['run_name']}/DRIMSeq/StageR_annot.csv"
+        f"results/{config['run_name']}/DRIMSeq/genes_DTU.csv",
+        f"results/{config['run_name']}/DRIMSeq/transcripts_proportions.csv",
+        f"results/{config['run_name']}/DRIMSeq/StageR.csv"
     params:
         DTU = f"results/{config['run_name']}/DRIMSeq/genes_DTU.tsv",
         PROP = f"results/{config['run_name']}/DRIMSeq/transcripts_proportions.tsv",

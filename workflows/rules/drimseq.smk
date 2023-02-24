@@ -1,10 +1,10 @@
 rule drimseq:
     input:
-
+        # f"data/processed/{config['run_name']}/{{sample}}/{{sample}}_salmon/quant.sf"
     output:
-        f"results/{config['run_name']}/DRIMSeq/genes_DTU.tsv",
-        f"results/{config['run_name']}/DRIMSeq/transcripts_proportions.tsv",
-        f"results/{config['run_name']}/DRIMSeq/StageR.tsv"
+        temp(f"results/{config['run_name']}/DRIMSeq/genes_DTU.tsv"),
+        temp(f"results/{config['run_name']}/DRIMSeq/transcripts_proportions.tsv"),
+        temp(f"results/{config['run_name']}/DRIMSeq/StageR.tsv"),
 
     params:
         samples = f"data/raw/samples_new.csv",
