@@ -97,8 +97,8 @@ table(table(counts(d)$gene_id))
 # create the design matrix for the full model
 design_full <- model.matrix(~condition, data=DRIMSeq::samples(d))
 
-#for testing
-d <- d[1:150,]
+#for testing purposes for less computations
+# d <- d[1:120,]
 
 # Calculate the precision for d using the full design
 set.seed(1)
@@ -126,12 +126,12 @@ res.txp$pvalue <- no.na(res.txp$pvalue)
 
 # Write res as a table to the file specified by xargs$output_TSV1 with "drimseq_genes_DTU.tsv" as suffix
 write.table(res,
-    file = paste("results", xargs$out_path, "DRIMSeq/drimseq_genes_DTU.tsv",sep="/"),
+    file = paste("results", xargs$out_path, "DRIMSeq/genes_DTU.tsv",sep="/"),
     row.names=FALSE, na="",col.names=TRUE, sep="\t")
 
 # Write res.txp as a table to the file specified by xargs$output_TSV2 with "drimseq_transcripts_proportions.tsv" as suffix
 write.table(res.txp,
-    file = paste("results", xargs$out_path, "DRIMSeq/drimseq_transcripts_proportions.tsv",sep="/"),
+    file = paste("results", xargs$out_path, "DRIMSeq/transcripts_proportions.tsv",sep="/"),
     row.names=FALSE, na="",col.names=TRUE, sep="\t")
 
 save(d, file = paste("results", xargs$out_path, "DRIMSeq/d.RData", sep="/"))

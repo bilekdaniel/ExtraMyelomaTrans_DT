@@ -13,4 +13,4 @@ cd /scratch/project/open-25-50/ExtraMyelomaTrans_DTU
 source activate drimseq
 
 snakemake --unlock --use-conda -s workflows/Snakefile
-snakemake --cores 36 --use-conda -s workflows/Snakefile
+snakemake --cores 36 --latency-wait 20 --use-conda -s workflows/Snakefile

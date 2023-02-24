@@ -49,6 +49,7 @@ dependencies:
   - bioconductor-keggrest=1.38.0=r42hdfd78af_0
   - bioconductor-limma=3.54.0=r42hc0cfd56_0
   - bioconductor-matrixgenerics=1.10.0=r42hdfd78af_0
+  - bioconductor-org.hs.eg.db=3.16.0=r42hdfd78af_0
   - bioconductor-rhtslib=2.0.0=r42hc0cfd56_0
   - bioconductor-rsamtools=2.14.0=r42hc247a5b_0
   - bioconductor-rtracklayer=1.58.0=r42h171f361_1
@@ -211,7 +212,7 @@ dependencies:
   - notebook-shim=0.2.2=pyhd8ed1ab_0
   - numpy=1.24.1=py311hbde0eaa_0
   - oauth2client=4.1.3=py_0
-  - openssl=1.1.1s=h0b41bf4_1
+  - openssl=1.1.1t=h0b41bf4_0
   - os=0.1.4=0
   - packaging=23.0=pyhd8ed1ab_0
   - pandas=1.5.3=py311h2872171_0
